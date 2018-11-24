@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title - WSDP Application</title>
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/sidebar-style.css">
+    <link rel="stylesheet" href="~/Content/themes/base/all.css" type="text/css"/>
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				@Html.ActionLink("WSDP", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>@Html.ActionLink(Resources.Resource.Home, "Index", "Home")</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> @Resources.Resource.AdminSettings <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>@Html.ActionLink(Resources.Resource.IFrame, "Index", "Frame")</li>
+							<li class="divider"></li>
+							<li>@Html.ActionLink(@Resources.Resource.EditCategories, "EditCategories", "Admin")</li>
+							<li class="divider"></li>
+							<li>@Html.ActionLink(@Resources.Resource.EditUsers, "EditUsers", "Admin")</li>
+							<li class="divider"></li>
+							<li>@Html.ActionLink(Resources.Resource.AddItem, "Create", "WebShop")</li>
+							<li>@Html.ActionLink(Resources.Resource.WebShops, "Index", "WebShop")</li>
+							<li class="divider"></li>
+							<li>@Html.ActionLink(@Resources.Resource.AddNewParserTask, "Settings", "UniversalParser")</li>
+							<li>@Html.ActionLink("View all tasks", "Index", "UniversalParser")</li>
+                            <li>@Html.ActionLink("Executing tasks", "ExecutingTasks", "UniversalParser")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Check exist goods", "CheckExistGoods", "Admin")</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					@Html.Partial("_LoginPartial")
+                    @Html.Partial("_ComparePartial")
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<hr />
+	<br />
+<div class="container body-content">
+    <div class="row">
+        <div class="col-sm-12">
+            @RenderBody()
+            <hr/>
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Ch-044</p>
+                <ul class="list-inline text-center">
+                    <li>@Html.ActionLink("UA", "Change", "Base", new {language = "uk-UA", url = Request.Url.AbsoluteUri}, null)</li>
+                    <li>@Html.ActionLink("RU", "Change", "Base", new {language = "ru-RU", url = Request.Url.AbsoluteUri}, null)</li>
+                    <li>@Html.ActionLink("EN", "Change", "Base", new {language = "en", url = Request.Url.AbsoluteUri}, null)</li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</div>
+
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jquery-ui")
+	@Scripts.Render("~/bundles/bootstrap")
+	@Scripts.Render("~/bundles/EditProperties")
+	@Scripts.Render("~/bundles/WebShop")
+	@Scripts.Render("~/bundles/EditUsers")
+	@Scripts.Render("~/Content/editcategories")
+	@Styles.Render("~/content/EditUsers_css")
+	@Scripts.Render("~/bundles/PriceStat")
+    @Scripts.Render("~/bundles/executing_tasks")
+    @Scripts.Render("~/bundles/GoodAutocomplete");
+	@Scripts.Render("~/bundles/ExecutingInfo")
+	@Scripts.Render("~/bundles/jquery-timeago")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
