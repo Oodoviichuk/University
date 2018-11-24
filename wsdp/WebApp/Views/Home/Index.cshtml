@@ -41,9 +41,9 @@
         <div class="top-nav-bg abs">
             <div class="razdel-box rel">
                 <a href="#" class="razdel adapt-1024 js-mmenu-initiator">
-                    <b>Каталог товаров</b>
+                    <b>Категорії медикаментів</b>
                 </a>
-                <span class="razdel-opener razdel open no-adapt-1024"><b><small class="glyphicon glyphicon-arrow-down"></small>Каталог товаров</b></span>
+                <span class="razdel-opener razdel open no-adapt-1024"><b>Каталог товаров</b></span>
 
             </div>
             <div class="search-box">
@@ -51,10 +51,10 @@
                     <b>Поиск</b>
                 </label>
                 <div class="s-form-box">
-                    <form action="/Good/GetGoodsByName" method="get" class="open-pup">
-                        <input type="submit" value="Поиск" class="but abs" id="doSearch"/>
+                    <form action="/Good/GetGoodsByName" method="get" class="search-form open-pup">
+                        <button type="submit" value="Поиск" class="submit-btn" id="doSearch">Поиск</button>
                         <div class="s-inp">
-                            <input id="searchbox" name="name" type="text" class="search-txt" data-autocomplete-source="@Url.Action("GetExactGoods", "Home")"/>
+                            <input id="searchbox" name="name" type="text" class="search-txt" data-autocomplete-source="@Url.Action("GetExactGoods", "Home")" />
                         </div>
                     </form>
                 </div>
@@ -77,7 +77,7 @@
             <div class="col-sm-9">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators">
+                    <ol class="carousel-indicators custom-idicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -85,47 +85,47 @@
                     </ol>
 
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner custom-carousel" role="listbox">
                         <div class="item active">
-                            <img src="http://htn.su/wp-content/uploads/2015/04/iPhone-7.jpg" alt="Chania" class="img-responsive">
+                            <img src="~/Content/themes/base/images/uroholum-apteka-face-2.jpg" alt="Chania" class="img-responsive">
                             <div class="carousel-caption">
-                                <h3>iPhone</h3>
+                                @*<h3>iPhone</h3>
                                 <p>
                                     В iPhone 7 все важнейшие аспекты iPhone значительно улучшены.
                                     Это принципиально новая система камер для фото- и видеосъёмки.
                                     Максимально мощный и экономичный аккумулятор iPhone.
-                                </p>
+                                </p>*@
 
                             </div>
                         </div>
 
                         <div class="item">
-                            <img class="img-responsive" src="http://thumbs.picclick.com/00/s/NzY4WDEwMjQ=/z/9ZAAAOSwZtJW-RXm/$/Dell-XPS-15-9550-156-4K-UHD-Touch-_57.jpg" alt="Chania">
+                            <img class="img-responsive" src="~/Content/themes/base/images/251_20180705_034947_13_119.jpg" alt="Chania">
                             <div class="carousel-caption">
-                                <h3>Dell XPS 15</h3>
+                                @*<h3>Dell XPS 15</h3>
                                 <p>
                                     Сочетание передовых технологий
-                                </p>
+                                </p>*@
                             </div>
                         </div>
 
                         <div class="item">
-                            <img class="img-responsive" src="http://www.captainwalt.com/size/1024x768/cdn-contents/2015/11/27/nostalgia-retro-series-microwave-nostalgia-electrics-retro-microwave-oven.jpg" alt="Flower">
+                            <img class="img-responsive" src="~/Content/themes/base/images/251_20180403_094547_11_124.jpg" alt="Flower">
                             <div class="carousel-caption">
-                                <h3>Retro Microwave</h3>
+                                @*<h3>Retro Microwave</h3>
                                 <p>
                                     1980
-                                </p>
+                                </p>*@
                             </div>
                         </div>
 
                         <div class="item">
-                            <img class="img-responsive" src="https://www.wired.com/wp-content/uploads/2016/07/PikachuTA-EWEATA-1024x768.jpg" alt="Flower">
+                            <img class="img-responsive" src="~/Content/themes/base/images/7gjoXR8IjTfqqx7ea9BNgA.jpg" alt="Flower">
                             <div class="carousel-caption">
-                                <h3>:'(</h3>
+                                @*<h3>:'(</h3>
                                 <p>
                                     Don't make pikachu crying
-                                </p>
+                                </p>*@
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
 
                         <div class="media-body">
                             <div class="col-xs-4">
-                                <h4 class="text-success text-center">
+                                <h4 class="text-info text-center">
                                     <a href="@Url.Action("ConcreteGood", "Good", new {id = good.Id})">@good.Name</a>
                                 </h4>
                                 @foreach (var item in good.PropertyValues.DictStringProperties)
@@ -168,19 +168,19 @@
                                 }
                             </div>
                             <div class="col-xs-2">
-                                <b class="text-success">Shop:</b>
+                                <b class="text-info">Shop:</b>
                                 <br/>
                                 <b class="text-muted">@good.WebShop.Name</b>
                             </div>
                             <div class="col-xs-2">
-                                <b class="text-success">Category:</b>
+                                <b class="text-info">Category:</b>
                                 <br/>
                                 <b class="text-muted">@good.Category.Name</b>
                             </div>
                             @if (@good.OldPrice == null)
                             {
                                 <div class="col-xs-2">
-                                    <b class="text-success">Price:</b>
+                                    <b class="text-info">Price:</b>
                                     <br/>
                                     <b class="text-muted">@good.Price</b>
                                 </div>
@@ -188,7 +188,7 @@
                             else
                             {
                                 <div class="col-xs-2">
-                                    <b class="text-success">Price:</b>
+                                    <b class="text-info">Price:</b>
                                     <br/>
                                     <b class="text-muted">
                                         <del>
@@ -200,7 +200,7 @@
                                 </div>
                             }
                             <div class="col-xs-2">
-                                <a class="btn btn-success" href="@good.UrlLink">To Shop</a>
+                                <a class="btn btn-info vertical-center" href="@good.UrlLink">To Shop</a>
                             </div>
                         </div>
                     </div>
@@ -217,4 +217,4 @@
 </div>
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/jquery-ui")
-@Scripts.Render("~/bundles/GoodAutocomplete");
+@Scripts.Render("~/bundles/GoodAutocomplete")
