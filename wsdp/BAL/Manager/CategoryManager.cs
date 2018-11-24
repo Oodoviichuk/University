@@ -52,7 +52,13 @@ namespace BAL.Manager
         {
             var parent = parentId != -1 ? uOW.CategoryRepo.GetByID(parentId) : null;
             var newCategory = new Category() { Name = name, ParentCategory = parent };
-            newCategory.OrderNo = uOW.CategoryRepo.All.ToList().Where(c => c.ParentCategory == parent).Max(x => x.OrderNo) + 1;
+            var list = uOW.CategoryRepo.All.ToList().Where(c => c.ParentCategory == parent).ToList();
+            if(list != null && list.Any())
+            newCategory.OrderNo = list.Max(x => x.OrderNo) + 1;
+            else
+            {
+                newCategory.OrderNo = 1;
+            }
             uOW.CategoryRepo.Insert(newCategory);
             uOW.Save();
             return newCategory.Id;

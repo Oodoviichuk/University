@@ -130,7 +130,7 @@
     <value>Adding</value>
   </data>
   <data name="AddNewCategory" xml:space="preserve">
-    <value>Add new Category</value>
+    <value>Add new category</value>
   </data>
   <data name="Attention" xml:space="preserve">
     <value>Attention</value>
@@ -171,8 +171,8 @@
   <data name="Updating" xml:space="preserve">
     <value>Updating</value>
   </data>
-  <data name="AddItem" xml:space="preserve">
-    <value>AddItem</value>
+  <data name="AddPharmacy" xml:space="preserve">
+    <value>Add new pharmacy</value>
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Delete</value>
@@ -195,8 +195,8 @@
   <data name="Parsers" xml:space="preserve">
     <value>Parsers</value>
   </data>
-  <data name="WebShops" xml:space="preserve">
-    <value>Web Shops</value>
+  <data name="WebPharmacies" xml:space="preserve">
+    <value>Web pharmacies</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>Download</value>
@@ -205,7 +205,7 @@
     <value>Fridges</value>
   </data>
   <data name="AddProperty" xml:space="preserve">
-    <value>Add Property</value>
+    <value>Add property</value>
   </data>
   <data name="CategoryName" xml:space="preserve">
     <value>Category Name</value>
@@ -271,7 +271,7 @@
     <value>Date</value>
   </data>
   <data name="EditCategories" xml:space="preserve">
-    <value>Edit Categories</value>
+    <value>Edit categories</value>
   </data>
   <data name="EnterDisc" xml:space="preserve">
     <value>Enter description of task</value>
@@ -328,7 +328,7 @@
     <value>Action</value>
   </data>
   <data name="EditUsers" xml:space="preserve">
-    <value>Edit Users</value>
+    <value>Edit users</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
@@ -416,5 +416,14 @@
   </data>
   <data name="Unfollow" xml:space="preserve">
     <value>Unfollow</value>
+  </data>
+  <data name="ViewAllTasks" xml:space="preserve">
+    <value>View all tasks</value>
+  </data>
+  <data name="CheckExistGoods" xml:space="preserve">
+    <value>Check exists goods</value>
+  </data>
+  <data name="ExecutingTasks" xml:space="preserve">
+    <value>Executing tasks</value>
   </data>
 </root>

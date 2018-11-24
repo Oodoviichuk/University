@@ -19,7 +19,7 @@ namespace Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resource {
@@ -106,16 +106,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AddItem.
-        /// </summary>
-        public static string AddItem {
-            get {
-                return ResourceManager.GetString("AddItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Add new Category.
+        ///   Looks up a localized string similar to Add new category.
         /// </summary>
         public static string AddNewCategory {
             get {
@@ -133,7 +124,16 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add Property.
+        ///   Looks up a localized string similar to Add new pharmacy.
+        /// </summary>
+        public static string AddPharmacy {
+            get {
+                return ResourceManager.GetString("AddPharmacy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add property.
         /// </summary>
         public static string AddProperty {
             get {
@@ -228,6 +228,15 @@ namespace Resources {
         public static string Characteristics {
             get {
                 return ResourceManager.GetString("Characteristics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check exists goods.
+        /// </summary>
+        public static string CheckExistGoods {
+            get {
+                return ResourceManager.GetString("CheckExistGoods", resourceCulture);
             }
         }
         
@@ -331,7 +340,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit Categories.
+        ///   Looks up a localized string similar to Edit categories.
         /// </summary>
         public static string EditCategories {
             get {
@@ -340,7 +349,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit Users.
+        ///   Looks up a localized string similar to Edit users.
         /// </summary>
         public static string EditUsers {
             get {
@@ -408,6 +417,15 @@ namespace Resources {
         public static string EnterPriority {
             get {
                 return ResourceManager.GetString("EnterPriority", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Executing tasks.
+        /// </summary>
+        public static string ExecutingTasks {
+            get {
+                return ResourceManager.GetString("ExecutingTasks", resourceCulture);
             }
         }
         
@@ -943,11 +961,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Web Shops.
+        ///   Looks up a localized string similar to View all tasks.
         /// </summary>
-        public static string WebShops {
+        public static string ViewAllTasks {
             get {
-                return ResourceManager.GetString("WebShops", resourceCulture);
+                return ResourceManager.GetString("ViewAllTasks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Web pharmacies.
+        /// </summary>
+        public static string WebPharmacies {
+            get {
+                return ResourceManager.GetString("WebPharmacies", resourceCulture);
             }
         }
         

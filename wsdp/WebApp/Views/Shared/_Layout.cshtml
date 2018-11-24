@@ -26,20 +26,18 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> @Resources.Resource.AdminSettings <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li>@Html.ActionLink(Resources.Resource.IFrame, "Index", "Frame")</li>
-							<li class="divider"></li>
 							<li>@Html.ActionLink(@Resources.Resource.EditCategories, "EditCategories", "Admin")</li>
 							<li class="divider"></li>
 							<li>@Html.ActionLink(@Resources.Resource.EditUsers, "EditUsers", "Admin")</li>
 							<li class="divider"></li>
-							<li>@Html.ActionLink(Resources.Resource.AddItem, "Create", "WebShop")</li>
-							<li>@Html.ActionLink(Resources.Resource.WebShops, "Index", "WebShop")</li>
+							<li>@Html.ActionLink(Resources.Resource.AddPharmacy, "Create", "WebShop")</li>
+							<li>@Html.ActionLink(Resources.Resource.WebPharmacies, "Index", "WebShop")</li>
 							<li class="divider"></li>
 							<li>@Html.ActionLink(@Resources.Resource.AddNewParserTask, "Settings", "UniversalParser")</li>
-							<li>@Html.ActionLink("View all tasks", "Index", "UniversalParser")</li>
-                            <li>@Html.ActionLink("Executing tasks", "ExecutingTasks", "UniversalParser")</li>
+							<li>@Html.ActionLink(@Resources.Resource.ViewAllTasks, "Index", "UniversalParser")</li>
+                            <li>@Html.ActionLink(@Resources.Resource.ExecutingTasks, "ExecutingTasks", "UniversalParser")</li>
                             <li class="divider"></li>
-                            <li>@Html.ActionLink("Check exist goods", "CheckExistGoods", "Admin")</li>
+                            <li>@Html.ActionLink(@Resources.Resource.CheckExistGoods, "CheckExistGoods", "Admin")</li>
 						</ul>
 					</li>
 				</ul>

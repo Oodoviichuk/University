@@ -40,7 +40,7 @@ namespace WebApp.Controllers
 		{
 			int pageSize = 7;
 			var goods = goodManager.GetAll();
-			var categories = categoryManager.GetAll();
+			var categories = categoryManager.GetAll().Where(t => t.HasChildrenCategories).ToList();
 			var goods_list = goodManager.GetAll();
 
 			foreach (var item in goods_list)

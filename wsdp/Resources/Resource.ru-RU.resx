@@ -171,8 +171,8 @@
   <data name="Updating" xml:space="preserve">
     <value>Обновление</value>
   </data>
-  <data name="AddItem" xml:space="preserve">
-    <value>Добавить</value>
+  <data name="AddPharmacy" xml:space="preserve">
+    <value>Добавить новую аптеку</value>
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Удалить</value>
@@ -195,8 +195,8 @@
   <data name="Parsers" xml:space="preserve">
     <value>Парсеры</value>
   </data>
-  <data name="WebShops" xml:space="preserve">
-    <value>Интернет магазины</value>
+  <data name="WebPharmacies" xml:space="preserve">
+    <value>Интернет аптеки</value>
   </data>
   <data name="Download" xml:space="preserve">
     <value>Скачать</value>
@@ -419,5 +419,14 @@
   </data>
   <data name="Unfollow" xml:space="preserve">
     <value>Отписатся</value>
+  </data>
+  <data name="CheckExistGoods" xml:space="preserve">
+    <value>Проверить имеющиеся лекарства</value>
+  </data>
+  <data name="ExecutingTasks" xml:space="preserve">
+    <value>Выполняющиеся задания</value>
+  </data>
+  <data name="ViewAllTasks" xml:space="preserve">
+    <value>Посмотреть все задания</value>
   </data>
 </root>
