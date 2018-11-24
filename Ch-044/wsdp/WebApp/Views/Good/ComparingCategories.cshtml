@@ -1,0 +1,68 @@
+﻿@model Model.DTO.ComparingCategoriesDTO
+@{
+    ViewBag.Title = "ComparingCategories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .mtb {
+        margin: 10px;
+        background-color: #fdfdfd;
+        border: 1px solid #D8D8D8;
+        border-radius: 5px;
+        border-width: 1px 1px 3px 1px;
+        padding: 10px;
+        min-height: 320px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <h2>ComparingCategories</h2>
+    </div>
+
+@{
+    var a = Model.CategoriesGoods.Keys;
+}
+
+    @foreach (var category in Model.CategoriesGoods.Keys)
+    {
+        var count = 0;
+        
+        <div class="row">
+            <h3 class="text-success">@category.Name</h3>
+
+            @foreach (var good in Model.CategoriesGoods[category])
+            {
+                count++;
+                <div class="col-xs-3 mtb">
+                    <div class="col-xs-12">
+                        <div class="vcenter">
+                            <div class="" style="margin:0 auto; min-height:150px;">
+                                <p>
+                                    <img src="@good.ImgLink" alt="" class="img-responsive" style="margin:0 auto; max-height:130px;" />
+                                </p>
+                            </div>
+                            <div class="" style="min-height:150px;">
+                                <br />
+                                <h4>
+                                    <a href="@Url.Action("ConcreteGood", "Good", new { id = good.Id })">@good.Name</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    
+         <div class="row">
+             @if (count > 1)
+             {
+                <br />
+                <a href="@Url.Action("CompareGoods","Good",new {id = category.Id})" class="btn btn-success">Compare Goods</a>
+             }
+         </div>
+
+
+    }
+
+</div>

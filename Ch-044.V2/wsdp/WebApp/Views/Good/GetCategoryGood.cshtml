@@ -1,0 +1,87 @@
+﻿@using PagedList.Mvc;
+@model Model.DTO.GetCategoryDTO
+@{
+	ViewBag.Title = "GetCategoryGood";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Styles.Render("~/Content/IndexStylesheet")
+@Styles.Render("~/Content/PhoneStylesheet")
+
+
+<div class="cf wrap container">
+	<div id="products" class="row list-group">
+		<div class="material-design-block">
+			<h2>@Model.CategoryName</h2>
+			<br />
+			<h4><a href="@Url.Action("Index", "Home")">@Resources.Resource.GoHome</a></h4>
+		</div>
+		<div class="clearfix"></div>
+		@foreach (var good in Model.GoodListCategory)
+			{
+			<div class="row material-design-block">
+				<div class="media">
+					<div class="media-left">
+						<a class="pull-left">
+							<img class="media-object" src="@good.ImgLink" alt="" style="">
+						</a>
+					</div>
+
+					<div class="media-body">
+						<div class="col-xs-4">
+							<h4 class="text-success text-center">
+								<a href="@Url.Action("ConcreteGood", "Good", new {id = good.Id})">@good.Name</a>
+							</h4>
+							@foreach (var item in good.PropertyValues.DictStringProperties)
+							{
+								<small class="text-muted">
+									@item.Value
+								</small>
+							}
+						</div>
+						<div class="col-xs-2">
+							<b class="text-success">Shop:</b>
+							<br />
+							<b class="text-muted">@good.WebShop.Name</b>
+						</div>
+						<div class="col-xs-2">
+							<b class="text-success">Category:</b>
+							<br />
+							<b class="text-muted cat-name">@good.Category.Name</b>
+						</div>
+						@if (@good.OldPrice == null)
+						{
+							<div class="col-xs-2">
+								<b class="text-success">Price:</b>
+								<br />
+								<b class="text-muted">@good.Price</b>
+							</div>
+						}
+						else
+						{
+							<div class="col-xs-2">
+								<b class="text-success">Price:</b>
+								<br />
+								<b class="text-muted"><del><small>@good.OldPrice</small></del></b>
+								<br />
+								<b class="text-danger">@good.Price</b>
+							</div>
+						}
+						<div class="col-xs-2">
+							<a class="btn btn-success" href="@good.UrlLink">To Shop</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			}
+		<div class="col-lg-12 paging">
+			Page @(Model.GoodListCategory.PageCount < Model.GoodListCategory.PageNumber ? 0 : Model.GoodListCategory.PageNumber) из @Model.GoodListCategory.PageCount
+
+			@Html.PagedListPager(Model.GoodListCategory, page => Url.Action("GetCategoryGood", new {@c_id=ViewBag.cat_id,@page=page }))
+		</div>
+	</div>
+	</div>
+
+
+
+

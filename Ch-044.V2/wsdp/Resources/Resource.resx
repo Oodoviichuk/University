@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Add category to </value>
+  </data>
+  <data name="AddInfo" xml:space="preserve">
+    <value>Type name of new category. If you want to choose parent, just after creating category drag and drop this to chosen parent</value>
+  </data>
+  <data name="Adding" xml:space="preserve">
+    <value>Adding</value>
+  </data>
+  <data name="AddNewCategory" xml:space="preserve">
+    <value>Add new Category</value>
+  </data>
+  <data name="Attention" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="BeAware" xml:space="preserve">
+    <value>Be aware!This is irreparably!</value>
+  </data>
+  <data name="ChangingParentCategory" xml:space="preserve">
+    <value>Also, consider changing parent category of all children categories.</value>
+  </data>
+  <data name="ConfiguringCategories" xml:space="preserve">
+    <value>Configuring Categories</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="DeleteAsk" xml:space="preserve">
+    <value>Do you want to delete this category</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="UpdateCategory" xml:space="preserve">
+    <value>Update Category</value>
+  </data>
+  <data name="UpdateInfo" xml:space="preserve">
+    <value>Type new name of new category. If you want to choose parent, just after creating category drag and drop this to chosen parent</value>
+  </data>
+  <data name="Updating" xml:space="preserve">
+    <value>Updating</value>
+  </data>
+  <data name="AddItem" xml:space="preserve">
+    <value>AddItem</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Sure" xml:space="preserve">
+    <value>Are you shure you want to delete</value>
+  </data>
+  <data name="Laptops" xml:space="preserve">
+    <value>Laptops</value>
+  </data>
+  <data name="Parsers" xml:space="preserve">
+    <value>Parsers</value>
+  </data>
+  <data name="WebShops" xml:space="preserve">
+    <value>Web Shops</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Fridges" xml:space="preserve">
+    <value>Fridges</value>
+  </data>
+  <data name="AddProperty" xml:space="preserve">
+    <value>Add Property</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="DefaultValue" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="PropertyName" xml:space="preserve">
+    <value>Property Name</value>
+  </data>
+  <data name="Sufix" xml:space="preserve">
+    <value>Sufix</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="UpdateProperty" xml:space="preserve">
+    <value>Update Property</value>
+  </data>
+  <data name="TVs" xml:space="preserve">
+    <value>TV's</value>
+  </data>
+  <data name="GoToShop" xml:space="preserve">
+    <value>GO TO SHOP</value>
+  </data>
+  <data name="TapeRecorders" xml:space="preserve">
+    <value>Tape Recorders</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="UAH" xml:space="preserve">
+    <value>UAH</value>
+  </data>
+  <data name="Characteristics" xml:space="preserve">
+    <value>Characteristics</value>
+  </data>
+  <data name="IFrame" xml:space="preserve">
+    <value>IFrame</value>
+  </data>
+  <data name="Inputs" xml:space="preserve">
+    <value>Inputs</value>
+  </data>
+  <data name="AddNewParserTask" xml:space="preserve">
+    <value>Add new parser task</value>
+  </data>
+  <data name="AdminSettings" xml:space="preserve">
+    <value>Admin Settings</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ConfigSettings" xml:space="preserve">
+    <value>Configuration settings</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="EditCategories" xml:space="preserve">
+    <value>Edit Categories</value>
+  </data>
+  <data name="EnterDisc" xml:space="preserve">
+    <value>Enter description of task</value>
+  </data>
+  <data name="EnterPriority" xml:space="preserve">
+    <value>Enter priority of task</value>
+  </data>
+  <data name="Grabber" xml:space="preserve">
+    <value>Grabber</value>
+  </data>
+  <data name="Iterator" xml:space="preserve">
+    <value>Iterator</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phones</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Shop" xml:space="preserve">
+    <value>Shop</value>
+  </data>
+  <data name="UpdatingParserTask" xml:space="preserve">
+    <value>Updating parser task</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="ItemIterator" xml:space="preserve">
+    <value>Item Iterator</value>
+  </data>
+  <data name="PageIterator" xml:space="preserve">
+    <value>Page Iterator</value>
+  </data>
+  <data name="PageURLIterator" xml:space="preserve">
+    <value>Page URL Iterator</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="URLMask" xml:space="preserve">
+    <value>URL Mask</value>
+  </data>
+  <data name="XPathPagination" xml:space="preserve">
+    <value>XPath Pagination</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="EditUsers" xml:space="preserve">
+    <value>Edit Users</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="EnterNewEmail" xml:space="preserve">
+    <value>Enter new email</value>
+  </data>
+  <data name="EnterNewPassword" xml:space="preserve">
+    <value>Enter new password</value>
+  </data>
+  <data name="EnterNewUserName" xml:space="preserve">
+    <value>Enter new User Name</value>
+  </data>
+  <data name="ValidationEmail" xml:space="preserve">
+    <value>Email is incorrect</value>
+  </data>
+  <data name="ValidationPassword" xml:space="preserve">
+    <value>Minimum length - 6 characters</value>
+  </data>
+  <data name="ValidationUserName" xml:space="preserve">
+    <value>Minimum length - 4 characters</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="EmailExist" xml:space="preserve">
+    <value>Email is already exist</value>
+  </data>
+  <data name="InputPassword" xml:space="preserve">
+    <value>Input password</value>
+  </data>
+  <data name="UncorrectEmailPassword" xml:space="preserve">
+    <value>Uncorrect email or password</value>
+  </data>
+  <data name="UserNameExist" xml:space="preserve">
+    <value>User name is already exist</value>
+  </data>
+  <data name="PasswordConfirmation" xml:space="preserve">
+    <value>Confirm password doesn't match, Type again!</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Field is requiered</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="SocialNetworksMessage" xml:space="preserve">
+    <value>You can use social networks</value>
+  </data>
+  <data name="NetworkErrMessage" xml:space="preserve">
+    <value>Sorry, but we can't provide this account or you have not registered yet.Try to use other account or register on our site.</value>
+  </data>
+  <data name="GoHome" xml:space="preserve">
+    <value>Return to the main page.</value>
+  </data>
+  <data name="NotFoundMessage" xml:space="preserve">
+    <value>The page is not found. Try later.</value>
+  </data>
+  <data name="CatMess" xml:space="preserve">
+    <value>There are no good's in this category!</value>
+  </data>
+  <data name="CategoryNotFound" xml:space="preserve">
+    <value>Category is empty,try again later.</value>
+  </data>
+  <data name="GoodsNotFounded" xml:space="preserve">
+    <value>Nothing to by founded by your request</value>
+  </data>
+  <data name="Follow" xml:space="preserve">
+    <value>Follow</value>
+  </data>
+  <data name="Unfollow" xml:space="preserve">
+    <value>Unfollow</value>
+  </data>
+</root>

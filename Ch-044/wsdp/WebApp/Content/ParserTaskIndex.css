@@ -1,0 +1,4 @@
+﻿.material-design-block div.col-md-1, div.col-md-2
+{
+   min-height: 120px;
+}

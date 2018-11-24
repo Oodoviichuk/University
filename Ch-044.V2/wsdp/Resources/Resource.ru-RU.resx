@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>О нас</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Добавить категорию к</value>
+  </data>
+  <data name="AddInfo" xml:space="preserve">
+    <value>Введите имя новой категории. Если хотите Изменить родительскую категорию, просто после обновления переместите её мышкой в нужную родительскую категорию</value>
+  </data>
+  <data name="Adding" xml:space="preserve">
+    <value>Добавление</value>
+  </data>
+  <data name="AddNewCategory" xml:space="preserve">
+    <value>Добавить новую категорию</value>
+  </data>
+  <data name="Attention" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="BeAware" xml:space="preserve">
+    <value>Будьте внимательными! Это не восстановимо</value>
+  </data>
+  <data name="ChangingParentCategory" xml:space="preserve">
+    <value>Также имейте ввиду смену родительской категории всех дочерних</value>
+  </data>
+  <data name="ConfiguringCategories" xml:space="preserve">
+    <value>Настройка категорий</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="DeleteAsk" xml:space="preserve">
+    <value>Хотите удалить категорию</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Домашняя страница</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="UpdateCategory" xml:space="preserve">
+    <value>Обновление категории</value>
+  </data>
+  <data name="UpdateInfo" xml:space="preserve">
+    <value>Введите новое имя категории. Если хотите изменить родительскую категорию, просто после обновления переместите её мышкой в нужную родительскую категорию</value>
+  </data>
+  <data name="Updating" xml:space="preserve">
+    <value>Обновление</value>
+  </data>
+  <data name="AddItem" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Логотип</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Sure" xml:space="preserve">
+    <value>Уверены, что хотите удалить</value>
+  </data>
+  <data name="Laptops" xml:space="preserve">
+    <value>Ноутбуки</value>
+  </data>
+  <data name="Parsers" xml:space="preserve">
+    <value>Парсеры</value>
+  </data>
+  <data name="WebShops" xml:space="preserve">
+    <value>Интернет магазины</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Скачать</value>
+  </data>
+  <data name="Fridges" xml:space="preserve">
+    <value>Холодильники</value>
+  </data>
+  <data name="AddProperty" xml:space="preserve">
+    <value>Добавить критерию</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Название категории</value>
+  </data>
+  <data name="CharacteristicId" xml:space="preserve">
+    <value>Характеристика</value>
+  </data>
+  <data name="DefaultValue" xml:space="preserve">
+    <value>Значение по умолчанию</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Prefix" xml:space="preserve">
+    <value>Префикс</value>
+  </data>
+  <data name="PropertyName" xml:space="preserve">
+    <value>Название критерия</value>
+  </data>
+  <data name="Sufix" xml:space="preserve">
+    <value>Суфикс</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Типа</value>
+  </data>
+  <data name="UpdateProperty" xml:space="preserve">
+    <value>Обновить критерий</value>
+  </data>
+  <data name="TVs" xml:space="preserve">
+    <value>Телевизоры</value>
+  </data>
+  <data name="GoToShop" xml:space="preserve">
+    <value>ПЕРЕЙТИ В МАГАЗИН</value>
+  </data>
+  <data name="TapeRecorders" xml:space="preserve">
+    <value>Магнитофоны</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="UAH" xml:space="preserve">
+    <value>Гривен</value>
+  </data>
+  <data name="Characteristics" xml:space="preserve">
+    <value>Характеристики</value>
+  </data>
+  <data name="IFrame" xml:space="preserve">
+    <value>Фрейм</value>
+  </data>
+  <data name="Inputs" xml:space="preserve">
+    <value>Поля для записи</value>
+  </data>
+  <data name="AddNewParserTask" xml:space="preserve">
+    <value>Добавление нового задания парсера</value>
+  </data>
+  <data name="AdminSettings" xml:space="preserve">
+    <value>Настройки админа</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="ConfigSettings" xml:space="preserve">
+    <value>Смена настроек</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="EditCategories" xml:space="preserve">
+    <value>Изменитить категории</value>
+  </data>
+  <data name="EnterDisc" xml:space="preserve">
+    <value>Введите описание задания</value>
+  </data>
+  <data name="EnterPriority" xml:space="preserve">
+    <value>Введите приоритет задания</value>
+  </data>
+  <data name="Grabber" xml:space="preserve">
+    <value>Граббер</value>
+  </data>
+  <data name="Iterator" xml:space="preserve">
+    <value>Итератор</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Далее</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефоны</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Shop" xml:space="preserve">
+    <value>Магазин</value>
+  </data>
+  <data name="UpdatingParserTask" xml:space="preserve">
+    <value>Обновления задания парсера</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="ItemIterator" xml:space="preserve">
+    <value>Нумератор объектов</value>
+  </data>
+  <data name="PageIterator" xml:space="preserve">
+    <value>Нумератор страниц</value>
+  </data>
+  <data name="PageURLIterator" xml:space="preserve">
+    <value>URL нумератор страниц</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>До</value>
+  </data>
+  <data name="URLMask" xml:space="preserve">
+    <value>URL Маска</value>
+  </data>
+  <data name="XPathPagination" xml:space="preserve">
+    <value>XPath Нумератор страниц</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="EditUsers" xml:space="preserve">
+    <value>Редактирование пользоватлей</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Почта</value>
+  </data>
+  <data name="EnterNewEmail" xml:space="preserve">
+    <value>Введите новую почту</value>
+  </data>
+  <data name="EnterNewPassword" xml:space="preserve">
+    <value>Введите новый пароль</value>
+  </data>
+  <data name="EnterNewUserName" xml:space="preserve">
+    <value>Введите новое имя пользователя</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Роль</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="ValidationEmail" xml:space="preserve">
+    <value>Некоректная почта</value>
+  </data>
+  <data name="ValidationPassword" xml:space="preserve">
+    <value>Минимальная длина - 6 символов</value>
+  </data>
+  <data name="ValidationUserName" xml:space="preserve">
+    <value>Минимальная длина - 4 символа</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="EmailExist" xml:space="preserve">
+    <value>Email уже существует</value>
+  </data>
+  <data name="InputPassword" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="UncorrectEmailPassword" xml:space="preserve">
+    <value>Неправильный email или пароль</value>
+  </data>
+  <data name="UserNameExist" xml:space="preserve">
+    <value>Имя пользователя уже существует</value>
+  </data>
+  <data name="PasswordConfirmation" xml:space="preserve">
+    <value>Пароли не совпадают</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Поле обязательное для ввода</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Подтвердите пароль</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Зарегестрироваться</value>
+  </data>
+  <data name="SocialNetworksMessage" xml:space="preserve">
+    <value>Вы можете использовать социальные сети</value>
+  </data>
+  <data name="NetworkErrMessage" xml:space="preserve">
+    <value>Извините, но мы не можем поддерживать этот аккаунт или вы еще не зарегестрированы. Попытайтесь использовать другой аккаунт или зарегестрироваться на нашем сайте.</value>
+  </data>
+  <data name="GoHome" xml:space="preserve">
+    <value>Перейти на главную страницу.</value>
+  </data>
+  <data name="NotFoundMessage" xml:space="preserve">
+    <value>Страница не найдена. Попробуйте позже.</value>
+  </data>
+  <data name="CatMess" xml:space="preserve">
+    <value>В данной категории товары отстутсвуют.</value>
+  </data>
+  <data name="CategoryNotFound" xml:space="preserve">
+    <value>В даной категории нету товаров,попробуйте позже.</value>
+  </data>
+  <data name="GoodsNotFounded" xml:space="preserve">
+    <value>По вашему запросу ничего не найдено.</value>
+  </data>
+  <data name="Follow" xml:space="preserve">
+    <value>Следить</value>
+  </data>
+  <data name="Unfollow" xml:space="preserve">
+    <value>Отписатся</value>
+  </data>
+</root>
