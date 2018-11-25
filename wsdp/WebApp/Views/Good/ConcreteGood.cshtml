@@ -51,19 +51,19 @@
 		</div>
 		<div class="col-xs-12 col-sm-6">
 			<div class="material-design-block pre-scrollable" style="max-height:483px;">
-				<h4><span class="glyphicon glyphicon-book"></span>[Description]</h4>
-				<p>
-					Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
-				</p>
+                <h4><span class="glyphicon glyphicon-book"></span>@Resources.Resource.Description</h4>
+                <p>
+                    @Model.Good.Description
+                </p>
 			</div>
 			<div class="material-design-block" style="max-height:483px;">
-				<h4 class="text-success">
-					<span class="glyphicon glyphicon-usd"></span>  Price: <b id="current-price"> @Model.Good.Price </b>
-					@if (Model.Good.OldPrice != null)
-					{
-						<del><b class="text-danger">@Model.Good.OldPrice</b></del>
-					}
-				</h4>
+                <h4 class="text-success">
+                    <span class="glyphicon"></span>  @Resources.Resource.Price: <b id="current-price"> @Model.Good.Price </b>
+                    @if (Model.Good.OldPrice != null)
+                    {
+                        <del><b class="text-danger">@Model.Good.OldPrice</b></del>
+                    }
+                </h4>
 
 				<input type="hidden"  id="goodUrl" value="@Model.Good.UrlLink"/>
                 <input type="hidden" id="goodId" value="@Model.Good.Id" />
@@ -75,7 +75,7 @@
 				<img src="@Model.Good.WebShop.LogoPath" alt="ShopLogo" class="img-responsive img-thumbnail" />
 				<br />
 				<br />
-				<a href="@Model.Good.UrlLink" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span> Go To Shop</a>
+                <a href="@Model.Good.UrlLink" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span>@Resources.Resource.GoToShop</a>
 			</div>
 		</div>
 	</div>

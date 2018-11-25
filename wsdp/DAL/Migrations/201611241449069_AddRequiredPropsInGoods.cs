@@ -8,7 +8,7 @@ namespace DAL.Migrations
         public override void Up()
         {
             AddColumn("dbo.Goods", "Name", c => c.String(nullable: false));
-            AddColumn("dbo.Goods", "Price", c => c.Decimal(precision: 10));
+            AddColumn("dbo.Goods", "Price", c => c.Decimal(precision: 10, scale: 2));
             AddColumn("dbo.Goods", "ImgLink", c => c.String(nullable: false));
             AddColumn("dbo.Goods", "UrlLink", c => c.String(nullable: false));
         }

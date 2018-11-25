@@ -15,6 +15,7 @@ namespace Model.DB
 		public decimal? Price { get; set; }
 
 		public string ImgLink { get; set; }
+        public string Description { get; set; }
 
 		[Required]
 		public string UrlLink { get; set; }

@@ -43,7 +43,7 @@
                 <a href="#" class="razdel adapt-1024 js-mmenu-initiator">
                     <b>Категорії медикаментів</b>
                 </a>
-                <span class="razdel-opener razdel open no-adapt-1024"><b>Каталог товаров</b></span>
+                <span class="razdel-opener razdel open no-adapt-1024"><b>@Resources.Resource.Catalog</b></span>
 
             </div>
             <div class="search-box">
@@ -52,7 +52,7 @@
                 </label>
                 <div class="s-form-box">
                     <form action="/Good/GetGoodsByName" method="get" class="search-form open-pup">
-                        <button type="submit" value="Поиск" class="submit-btn" id="doSearch">Поиск</button>
+                        <button type="submit" value="Поиск" class="submit-btn" id="doSearch">@Resources.Resource.Search</button>
                         <div class="s-inp">
                             <input id="searchbox" name="name" type="text" class="search-txt" data-autocomplete-source="@Url.Action("GetExactGoods", "Home")" />
                         </div>
@@ -89,12 +89,6 @@
                         <div class="item active">
                             <img src="~/Content/themes/base/images/uroholum-apteka-face-2.jpg" alt="Chania" class="img-responsive">
                             <div class="carousel-caption">
-                                @*<h3>iPhone</h3>
-                                <p>
-                                    В iPhone 7 все важнейшие аспекты iPhone значительно улучшены.
-                                    Это принципиально новая система камер для фото- и видеосъёмки.
-                                    Максимально мощный и экономичный аккумулятор iPhone.
-                                </p>*@
 
                             </div>
                         </div>
@@ -102,30 +96,21 @@
                         <div class="item">
                             <img class="img-responsive" src="~/Content/themes/base/images/251_20180705_034947_13_119.jpg" alt="Chania">
                             <div class="carousel-caption">
-                                @*<h3>Dell XPS 15</h3>
-                                <p>
-                                    Сочетание передовых технологий
-                                </p>*@
+                              
                             </div>
                         </div>
 
                         <div class="item">
                             <img class="img-responsive" src="~/Content/themes/base/images/251_20180403_094547_11_124.jpg" alt="Flower">
                             <div class="carousel-caption">
-                                @*<h3>Retro Microwave</h3>
-                                <p>
-                                    1980
-                                </p>*@
+                               
                             </div>
                         </div>
 
                         <div class="item">
                             <img class="img-responsive" src="~/Content/themes/base/images/7gjoXR8IjTfqqx7ea9BNgA.jpg" alt="Flower">
                             <div class="carousel-caption">
-                                @*<h3>:'(</h3>
-                                <p>
-                                    Don't make pikachu crying
-                                </p>*@
+                               
                             </div>
                         </div>
                     </div>
@@ -160,27 +145,22 @@
                                 <h4 class="text-info text-center">
                                     <a href="@Url.Action("ConcreteGood", "Good", new {id = good.Id})">@good.Name</a>
                                 </h4>
-                                @foreach (var item in good.PropertyValues.DictStringProperties)
-                                {
-                                    <small class="text-muted">
-                                        @item.Value
-                                    </small>
-                                }
+                                @good.Description
                             </div>
                             <div class="col-xs-2">
-                                <b class="text-info">Shop:</b>
+                                <b class="text-info">@Resources.Resource.Pharmacy:</b>
                                 <br/>
                                 <b class="text-muted">@good.WebShop.Name</b>
                             </div>
                             <div class="col-xs-2">
-                                <b class="text-info">Category:</b>
+                                <b class="text-info">@Resources.Resource.CategoryName:</b>
                                 <br/>
                                 <b class="text-muted">@good.Category.Name</b>
                             </div>
                             @if (@good.OldPrice == null)
                             {
                                 <div class="col-xs-2">
-                                    <b class="text-info">Price:</b>
+                                    <b class="text-info">@Resources.Resource.Price:</b>
                                     <br/>
                                     <b class="text-muted">@good.Price</b>
                                 </div>
@@ -200,7 +180,7 @@
                                 </div>
                             }
                             <div class="col-xs-2">
-                                <a class="btn btn-info vertical-center" href="@good.UrlLink">To Shop</a>
+                                <a class="btn btn-info vertical-center" href="@good.UrlLink">@Resources.Resource.GoToShop</a>
                             </div>
                         </div>
                     </div>

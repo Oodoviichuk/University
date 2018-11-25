@@ -178,6 +178,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Drug Catalog.
+        /// </summary>
+        public static string Catalog {
+            get {
+                return ResourceManager.GetString("Catalog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Category.
         /// </summary>
         public static string Category {
@@ -237,6 +246,15 @@ namespace Resources {
         public static string CheckExistGoods {
             get {
                 return ResourceManager.GetString("CheckExistGoods", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Compare.
+        /// </summary>
+        public static string Compare {
+            get {
+                return ResourceManager.GetString("Compare", resourceCulture);
             }
         }
         
@@ -327,6 +345,15 @@ namespace Resources {
         public static string Download {
             get {
                 return ResourceManager.GetString("Download", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Drug name.
+        /// </summary>
+        public static string DrugName {
+            get {
+                return ResourceManager.GetString("DrugName", resourceCulture);
             }
         }
         
@@ -475,7 +502,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GO TO SHOP.
+        ///   Looks up a localized string similar to Go to pharmacy.
         /// </summary>
         public static string GoToShop {
             get {
@@ -489,6 +516,15 @@ namespace Resources {
         public static string Grabber {
             get {
                 return ResourceManager.GetString("Grabber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Healthy line.
+        /// </summary>
+        public static string HealthyLine {
+            get {
+                return ResourceManager.GetString("HealthyLine", resourceCulture);
             }
         }
         
@@ -507,6 +543,24 @@ namespace Resources {
         public static string IFrame {
             get {
                 return ResourceManager.GetString("IFrame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image link.
+        /// </summary>
+        public static string ImageLink {
+            get {
+                return ResourceManager.GetString("ImageLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In Comparing.
+        /// </summary>
+        public static string InComparing {
+            get {
+                return ResourceManager.GetString("InComparing", resourceCulture);
             }
         }
         
@@ -610,6 +664,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Old price.
+        /// </summary>
+        public static string OldPrice {
+            get {
+                return ResourceManager.GetString("OldPrice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Page Iterator.
         /// </summary>
         public static string PageIterator {
@@ -651,6 +714,15 @@ namespace Resources {
         public static string PasswordConfirmation {
             get {
                 return ResourceManager.GetString("PasswordConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pharmacy.
+        /// </summary>
+        public static string Pharmacy {
+            get {
+                return ResourceManager.GetString("Pharmacy", resourceCulture);
             }
         }
         
@@ -732,6 +804,15 @@ namespace Resources {
         public static string SAVE {
             get {
                 return ResourceManager.GetString("SAVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
             }
         }
         

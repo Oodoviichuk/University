@@ -16,11 +16,11 @@ else
 
 @if (Model.IsComparing)
 {
-	<a class="btn btn-success" onclick="UnsetCompareGood(@Model.Good.Id, this);"><span class="glyphicon glyphicon-ok"></span>In Comparing</a>
+    <a class="btn btn-success" onclick="UnsetCompareGood(@Model.Good.Id, this);"><span class="glyphicon glyphicon-ok"></span>@Resources.Resource.InComparing</a>
 }
 else
 {
-	<a class="btn btn-success" onclick="SetCompareGood(@Model.Good.Id, this);"><span class="glyphicon glyphicon-stats"></span>Compare</a>
+    <a class="btn btn-success" onclick="SetCompareGood(@Model.Good.Id, this);"><span class="glyphicon glyphicon-stats"></span>@Resources.Resource.Compare</a>
 }
 
 

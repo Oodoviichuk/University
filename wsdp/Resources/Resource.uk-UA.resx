@@ -238,7 +238,7 @@
     <value>Телевізори</value>
   </data>
   <data name="GoToShop" xml:space="preserve">
-    <value>ПЕРЕЙТИ ДО МАГАЗИНУ</value>
+    <value>Перейти до аптеки</value>
   </data>
   <data name="TapeRecorders" xml:space="preserve">
     <value>Магнітоли</value>
@@ -428,5 +428,32 @@
   </data>
   <data name="ViewAllTasks" xml:space="preserve">
     <value>Переглянути всі завдання</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Пошук</value>
+  </data>
+  <data name="Catalog" xml:space="preserve">
+    <value>Каталог медикаментів</value>
+  </data>
+  <data name="HealthyLine" xml:space="preserve">
+    <value>Здорова лінія</value>
+  </data>
+  <data name="Pharmacy" xml:space="preserve">
+    <value>Аптека</value>
+  </data>
+  <data name="Compare" xml:space="preserve">
+    <value>Порівняти</value>
+  </data>
+  <data name="DrugName" xml:space="preserve">
+    <value>Назва ліків</value>
+  </data>
+  <data name="ImageLink" xml:space="preserve">
+    <value>Посилання на зображення</value>
+  </data>
+  <data name="InComparing" xml:space="preserve">
+    <value>В порівнянні</value>
+  </data>
+  <data name="OldPrice" xml:space="preserve">
+    <value>Стара ціна</value>
   </data>
 </root>

@@ -53,15 +53,6 @@
                     <div class="row">
 
                         <div class="form-group">
-                            <label for="sel1">Download Method</label>
-                            <select class="form-control" id="sel1" name="DownloadMethod">
-                                <option value="0">Direct</option>
-                                <option value="1">Tor</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-
                             @Html.Label(Resources.Resource.ItemIterator)
                             <div id="fields">
 
@@ -78,28 +69,10 @@
                                 }
 
                             </div>
-
-                            <button type="button" id="add_field" class="btn btn-primary btn-xs" style="margin-top:10px;" onclick="AddField(this);">Add field</button>
                         </div>
                     </div>
 
-                    <div class="row" style="padding-top:50px;">
-
-                        @Html.RadioButton("VariantOfPath", "XPath Pagination", new { @class = "button1" })@Resources.Resource.XPathPagination
-
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <div class="row">
-
-                                    @Html.Label(Resources.Resource.PageIterator)
-                                    @Html.TextBoxFor(m => m.XPathPageIterator, new { @class = "form-control", @placeholder = "xpath1, xpath2...", style = "resize:none;" })
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row" style="padding-top:50px;">
+                    <div class="row" style="padding-top:10px;">
 
                         @Html.RadioButton("VariantOfPath", "Page URL Iterator", new { @class = "button2", @checked = "checked" })@Resources.Resource.PageURLIterator
 

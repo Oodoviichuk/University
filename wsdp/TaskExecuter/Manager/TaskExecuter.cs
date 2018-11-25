@@ -126,6 +126,7 @@ namespace TaskExecuting.Manager
 
             resultGood.WebShop_Id = parsertask.WebShopId;
             resultGood.Category_Id = parsertask.CategoryId;
+            resultGood.Description = parsertask.Description;
             ///////////////////////////////////Parcing name by list of xpathes
             var xpathbuffer = "";
             try
