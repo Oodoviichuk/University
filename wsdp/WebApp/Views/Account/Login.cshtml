@@ -4,11 +4,46 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    .login-form .control-label {
+        padding-top: 0;
+        text-align: left;
+    }
+
+    .body {
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 1000;
+        margin-bottom: 20px;
+    }
+
+    footer a {
+        color: #3498db;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #02578e;
+    }
+
+    .social-description {
+        margin-bottom: 15px;
+    }
+
+    .navbar-default {
+        background: #02578e;
+    }
+</style>
 
 <div class="container">
     <div class="row">
         <div class="col-md-12"><h2>@Resources.Resource.LogIn</h2></div>
-        <div class="col-md-12">
+        <div class="col-md-12 social-description">
             <span>@Resources.Resource.SocialNetworksMessage:</span>
         </div>
         <div class="col-md-3">
@@ -16,7 +51,7 @@
         </div>
     </div>
     <div class="row">
-        <form action="/Account/Login" class="form-horizontal" method="post" enctype="multipart/form-data">
+        <form action="/Account/Login" class="form-horizontal login-form" method="post" enctype="multipart/form-data">
 
             @Html.AntiForgeryToken()
 
@@ -25,7 +60,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2">@Resources.Resource.UserName\@Resources.Resource.Email</label>
                     <div class="col-md-4">
-                        <input id="textinput" name="Name" type="text" value="@Model.Name" placeholder="placeholder" class="form-control input-md">
+                        <input id="textinput" name="Name" type="text" value="@Model.Name" class="form-control input-md">
                         @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
                     </div>
                 </div>
@@ -33,14 +68,14 @@
                 <div class="form-group">
                     <label class="control-label col-md-2">@Resources.Resource.Password</label>
                     <div class="col-md-4">
-                        <input id="textinput" name="Password" type="password" value="@Model.Password" placeholder="placeholder" class="form-control input-md">
+                        <input id="textinput" name="Password" type="password" value="@Model.Password" class="form-control input-md">
                         @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="@Resources.Resource.LogIn" class="btn btn-default" />
+                        <input type="submit" value="@Resources.Resource.LogIn" class="btn btn-info" />
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 10px;
     background: rgb(255, 255, 255) !important;
+    position: relative;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -49,6 +50,7 @@ textarea {
     border-radius: 5px;
     border-width: 1px 1px 3px 1px;
     padding: 10px;
+    height: 190px;
 }
 
     .material-design-block > h2 {

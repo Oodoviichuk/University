@@ -72,6 +72,7 @@
 
 .vertical-center {
     margin-top: 25%;
+    padding: 10px;
 }
 
 .rel { position: relative; }
@@ -218,6 +219,7 @@ html, body, div {
 .paging .pagination-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .paging li > a {
@@ -242,4 +244,12 @@ html, body, div {
 
 .custom-table .shop-logo {
     max-width: 100px !important;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+    z-index: 1000;
+    margin-bottom: 20px;
 }

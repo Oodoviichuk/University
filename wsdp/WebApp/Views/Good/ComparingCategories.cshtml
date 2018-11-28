@@ -4,6 +4,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <style>
+    body {
+        position: relative;
+    }
+
     .mtb {
         margin: 10px;
         background-color: #fdfdfd;
@@ -11,7 +15,47 @@
         border-radius: 5px;
         border-width: 1px 1px 3px 1px;
         padding: 10px;
-        min-height: 320px;
+        height: 370px;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: -120px;
+        z-index: 1000;
+        margin-bottom: 20px;
+    }
+
+    footer a {
+        color: #3498db;
+        text-decoration: none;
+    }
+
+    footer a:hover,
+    footer a:focus,
+    footer a:active,
+    footer a:visited {
+        color: #02578e;
+    }
+
+    .navbar-default {
+        background: #02578e;
+    }
+
+    .vcenter {
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vcenter .item-name {
+        margin-top: auto;
+        margin-bottom: 10px;
+ 
+    }
+
+    .item-name a {
+        color: #02578e;
     }
 </style>
 <div class="container">
@@ -28,7 +72,7 @@
         var count = 0;
         
         <div class="row">
-            <h3 class="text-success">@category.Name</h3>
+            <h3 class="text-info">@category.Name</h3>
 
             @foreach (var good in Model.CategoriesGoods[category])
             {
@@ -41,7 +85,7 @@
                                     <img src="@good.ImgLink" alt="" class="img-responsive" />
                                 </p>
                             </div>
-                            <div class="">
+                            <div class="item-name">
                                 <br />
                                 <h4>
                                     <a href="@Url.Action("ConcreteGood", "Good", new { id = good.Id })">@good.Name</a>
@@ -58,7 +102,7 @@
              @if (count > 1)
              {
                 <br />
-                <a href="@Url.Action("CompareGoods","Good",new {id = category.Id})" class="btn btn-success">Compare Goods</a>
+                <a href="@Url.Action("CompareGoods","Good",new {id = category.Id})" class="btn btn-info">Compare Goods</a>
              }
          </div>
 

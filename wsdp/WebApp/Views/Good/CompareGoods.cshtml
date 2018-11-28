@@ -26,16 +26,25 @@
             border-right:1px dotted #DDD;
         }
 
-        .property
-        {
-            margin-left:25px;
+        .pd-x-2 {
+            padding: 0 20px
         }
 
         .property-main{
             float:right;
             margin-right:25px;
         }
-</style>
+
+        .vcenter {
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .a-height {
+            height: auto
+        }
+ </style>
 
 <div class="container">
     <div class="row">
@@ -52,7 +61,7 @@
 
             </div>
             <div class="row">
-                <div class="mtb vcenter" style="min-height:250px;">
+                <div class="mtb vcenter a-height" style="min-height:250px;">
                     <div class="" style="margin:0 auto;">
                         <p>
                             <a href="@Url.Action("GetCategoryGood", "Good", new { c_id = Model.Goods[0].Category_Id})">
@@ -82,7 +91,7 @@
          @foreach (var good in Model.Goods)
          {
              <div class="col-xs-3 ">
-                 <div class="row good-name">
+                 <div class="good-name">
                      <h4 class="text-center text-success">
                          <a href="@Url.Action("ConcreteGood", "Good", new { id = good.Id})">
                              @good.Name
@@ -90,9 +99,9 @@
                     </h4>
     
                  </div>
-                 <div class="row">
-                     <div class="mtb vcenter" style="min-height:250px;">
-                         <div class="" style="margin:0 auto;">
+                 <div>
+                     <div class="mtb vcenter a-height" style="min-height:250px;">
+                         <div  class="pd-x-2" style="margin:0 auto;">
                              <p>
                                  <a href="@Url.Action("ConcreteGood", "Good", new { id = good.Id})">
                                      <img src="@good.ImgLink" alt="" class="img-responsive" />
@@ -101,15 +110,15 @@
                          </div>
                      </div>
                  </div>
-                 <div class="row">
-                     <div class="row">
+                 <div >
+                     <div class="pd-x-2">
                          <hr />
                          <span class="property">@good.Price</span>
                      </div>
                      <hr />
                      @foreach (var property in good.PropertyValues.DictStringProperties)
                      {
-                         <div class="row">
+                         <div class="pd-x-2" >
                              <span class="property">@property.Value</span>
                              <hr />
                          </div>

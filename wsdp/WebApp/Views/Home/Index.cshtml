@@ -29,6 +29,25 @@
         color: #CCC;
     }
 
+    .item-description {
+        display: block;
+        display: -webkit-box;
+        max-width: 400px;
+        height: 100px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 1.4;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .text-mounted {
+        color: #a59f9f;
+        font-size: 14px;
+    }
+
 
 </style>
 
@@ -145,24 +164,26 @@
                                 <h4 class="text-info text-center">
                                     <a href="@Url.Action("ConcreteGood", "Good", new {id = good.Id})">@good.Name</a>
                                 </h4>
-                                @good.Description
+                                <p class="item-description">
+                                    @good.Description
+                                </p>
                             </div>
                             <div class="col-xs-2">
                                 <b class="text-info">@Resources.Resource.Pharmacy:</b>
                                 <br/>
-                                <b class="text-muted">@good.WebShop.Name</b>
+                                <b class="text-mounted">@good.WebShop.Name</b>
                             </div>
                             <div class="col-xs-2">
                                 <b class="text-info">@Resources.Resource.CategoryName:</b>
                                 <br/>
-                                <b class="text-muted">@good.Category.Name</b>
+                                <b class="text-mounted">@good.Category.Name</b>
                             </div>
                             @if (@good.OldPrice == null)
                             {
                                 <div class="col-xs-2">
                                     <b class="text-info">@Resources.Resource.Price:</b>
                                     <br/>
-                                    <b class="text-muted">@good.Price</b>
+                                    <b class="text-mounted">@good.Price</b>
                                 </div>
                             }
                             else
@@ -170,7 +191,7 @@
                                 <div class="col-xs-2">
                                     <b class="text-info">Price:</b>
                                     <br/>
-                                    <b class="text-muted">
+                                    <b class="text-mounted">
                                         <del>
                                             <small>@good.OldPrice</small>
                                         </del>

@@ -484,7 +484,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Return to the main page..
+        ///   Looks up a localized string similar to Return to the main page.
         /// </summary>
         public static string GoHome {
             get {
