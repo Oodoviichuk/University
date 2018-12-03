@@ -453,4 +453,64 @@
   <data name="OldPrice" xml:space="preserve">
     <value>Old price</value>
   </data>
+  <data name="Chart" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="Chartforpricechanges" xml:space="preserve">
+    <value>Chart for price changing</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="Offers" xml:space="preserve">
+    <value>Offers</value>
+  </data>
+  <data name="UserUpdate" xml:space="preserve">
+    <value>Update user information</value>
+  </data>
+  <data name="DownloadMethod" xml:space="preserve">
+    <value>Download Method</value>
+  </data>
+  <data name="AddAnother" xml:space="preserve">
+    <value>Add another drug</value>
+  </data>
+  <data name="CompareGoods" xml:space="preserve">
+    <value>Compare drugs</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ExecuteInfoTasks" xml:space="preserve">
+    <value>Execute info count</value>
+  </data>
+  <data name="GetInfoByTaskId" xml:space="preserve">
+    <value>Info By Task Id</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="ParserTasks" xml:space="preserve">
+    <value>Parser tasks</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="TaskId" xml:space="preserve">
+    <value>Task id</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url</value>
+  </data>
 </root>

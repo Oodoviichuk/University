@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2">@Resources.Resource.UserName</label>
                     <div class="col-md-4">
-                        <input id="textinput" name="UserName" type="text" value="@Model.UserName" placeholder="placeholder" class="form-control input-md">
+                        <input id="textinput" name="UserName" type="text" value="@Model.UserName"  class="form-control input-md">
                         @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2">@Resources.Resource.Email</label>
                     <div class="col-md-4">
-                        <input id="textinput" name="Email" type="text" value="@Model.Email" placeholder="placeholder" class="form-control input-md">
+                        <input id="textinput" name="Email" type="text" value="@Model.Email"  class="form-control input-md">
                         @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2">@Resources.Resource.Password</label>
                     <div class="col-md-4">
-                        <input id="textinput" name="Password" type="password" value="@Model.Password" placeholder="placeholder" class="form-control input-md">
+                        <input id="textinput" name="Password" type="password" value="@Model.Password"  class="form-control input-md">
                         @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                 <div class="form-group">
                     <label class="control-label col-md-2">@Resources.Resource.ConfirmPassword</label>
                     <div class="col-md-4">
-                        <input id="textinput" name="ConfirmPassword" type="password" value="@Model.ConfirmPassword" placeholder="placeholder" class="form-control input-md password-confirm" />
+                        <input id="textinput" name="ConfirmPassword" type="password" value="@Model.ConfirmPassword"  class="form-control input-md password-confirm" />
                         @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
                     </div>
                 </div>

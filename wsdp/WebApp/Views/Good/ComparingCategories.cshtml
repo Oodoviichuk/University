@@ -59,9 +59,7 @@
     }
 </style>
 <div class="container">
-    <div class="row">
-        <h2>ComparingCategories</h2>
-    </div>
+
 
 @{
     var a = Model.CategoriesGoods.Keys;
@@ -102,7 +100,7 @@
              @if (count > 1)
              {
                 <br />
-                <a href="@Url.Action("CompareGoods","Good",new {id = category.Id})" class="btn btn-info">Compare Goods</a>
+                <a href="@Url.Action("CompareGoods","Good",new {id = category.Id})" class="btn btn-info">@Resources.Resource.CompareGoods</a>
              }
          </div>
 

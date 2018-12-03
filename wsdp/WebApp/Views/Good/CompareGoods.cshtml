@@ -48,14 +48,11 @@
 
 <div class="container">
     <div class="row">
-        <h2 class="text-center">Comparing Goods</h2>
-    </div>
-    <div class="row">
         <div class="col-xs-3">
             <div class="row good-name">
                 <h2 class="text-center text-muted">
                     <a href="@Url.Action("GetCategoryGood", "Good", new { c_id = Model.Goods[0].Category_Id})">
-                        add another good
+                        @Resources.Resource.AddAnother
                     </a>
                 </h2>
 
@@ -74,7 +71,7 @@
             <div class="row">
                 <div class="row">
                     <hr />
-                    <span class="property"><b>Price: </b></span>
+                    <span class="property"><b>@Resources.Resource.Price: </b></span>
                 </div>
                 <hr />
                 @foreach (var property in Model.Properties)

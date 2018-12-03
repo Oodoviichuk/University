@@ -456,4 +456,64 @@
   <data name="OldPrice" xml:space="preserve">
     <value>Старая цена</value>
   </data>
+  <data name="Chart" xml:space="preserve">
+    <value>График</value>
+  </data>
+  <data name="Chartforpricechanges" xml:space="preserve">
+    <value>График изменения цены</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Коментарии</value>
+  </data>
+  <data name="Offers" xml:space="preserve">
+    <value>Предложения</value>
+  </data>
+  <data name="UserUpdate" xml:space="preserve">
+    <value>Обновить данные пользователя</value>
+  </data>
+  <data name="DownloadMethod" xml:space="preserve">
+    <value>Способ загрузки</value>
+  </data>
+  <data name="AddAnother" xml:space="preserve">
+    <value>Добавить еще лекарство</value>
+  </data>
+  <data name="CompareGoods" xml:space="preserve">
+    <value>Сравнить лекарство</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ExecuteInfoTasks" xml:space="preserve">
+    <value>Количество лекарств</value>
+  </data>
+  <data name="GetInfoByTaskId" xml:space="preserve">
+    <value>Информация по идентификатору задания</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Идентификатор</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Следующая</value>
+  </data>
+  <data name="ParserTasks" xml:space="preserve">
+    <value>Задания парсера</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Просмотр</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Предыдущая</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="TaskId" xml:space="preserve">
+    <value>Идентификатор задания</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Ссылка</value>
+  </data>
 </root>

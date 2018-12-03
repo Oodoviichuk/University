@@ -30,7 +30,7 @@
 </div><!-- /.modal -->
 <div class="container">
 	<div class="row">
-		<h2 class="col-xs-12">[Parser Tasks]</h2>
+        <h2 class="col-xs-12">@Resources.Resource.ParserTasks</h2>
 	</div>
 	@foreach (var parsertask in Model) {
 		<div class="row material-design-block">
@@ -68,17 +68,17 @@
 				}
 			</div>
 			<div class="col-md-2 col-xs-3">
-				<b>Category:</b>
+                <b>@Resources.Resource.Category:</b>
 				<br />
 				<b class="text-success">@parsertask.Category.Name  </b>
 			</div>
 			<div class="col-md-2 col-xs-3">
-				<b>Shop:</b>
+                <b>@Resources.Resource.Pharmacy:</b>
 				<br />
 				<b class="text-success">@parsertask.WebShop.Name</b>
 			</div>
 			<div class="col-md-2 col-xs-4">
-				<b>Date:</b>
+                <b>@Resources.Resource.Date:</b>
 				<br />
 				@if (parsertask.EndDate == null) {
 					<span class="text-muted">
@@ -91,7 +91,7 @@
 				}
 			</div>
 			<div class="col-md-2 col-xs-4">
-				<b>ExecuteInfoCount:</b>
+				<b>@Resources.Resource.ExecuteInfoTasks:</b>
 				<br />
 				@if (parsertask.ExecuteInfoCount == 0) {
 					<span class="text-muted">
