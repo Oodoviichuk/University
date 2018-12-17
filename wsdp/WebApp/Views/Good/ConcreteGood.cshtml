@@ -13,7 +13,7 @@
 <style>
 
     .navbar-default {
-        background: #02578e;
+        background: #02578e !important;
     }
 
     .tab-view-marketing a {
@@ -51,6 +51,57 @@
 
     .mr-1 {
         margin-right: 10px;
+    }
+    .body {
+        position: relative;
+    }
+
+    footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 1000;
+        height: 75px;
+        background: white;
+    }
+
+    footer hr {
+        margin-top: 0
+    }
+
+    footer a {
+        color: #3498db;
+        text-decoration: none;
+    }
+
+    footer a:hover,
+    footer a:focus,
+    footer a:active,
+    footer a:visited {
+        color: #02578e;
+    }
+
+    .text-mounted {
+        color: #a59f9f;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    .item-description {
+        display: block;
+        display: -webkit-box;
+        max-width: 400px;
+        height: 100px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 1.4;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 </style>
 
@@ -173,65 +224,64 @@
 	</div>
 	<div id="similaroffers" class="tab-pane fade">
 		<div class="">
-			<div>
-				<h4 class="text-mounted">Also, you may be interested in ...</h4>
+            <div>
+                <h4 class="text-mounted">Also, you may be interested in ...</h4>
 
-				@foreach (var good in Model.SimilarOffers)
-				{
-					<div class="row material-design-block">
-						<div class="media">
-							<div class="media-left">
-								<a class="pull-left">
-									<img class="media-object" src="@good.ImgLink" alt="" style="">
-								</a>
-							</div>
+                @foreach (var good in Model.SimilarOffers)
+                {
+                    <div class="row material-design-block">
+                        <div class="media">
+                            <div class="media-left">
+                                <a class="pull-left">
+                                    <img class="media-object" src="@good.ImgLink" alt="" style="">
+                                </a>
+                            </div>
 
-							<div class="media-body">
-								<div class="col-xs-4">
-									<h4 class="text-info text-center"><a href="@Url.Action("ConcreteGood","Good",new {id = good.Id})">@good.Name</a></h4>
-									@foreach (var item in good.PropertyValues.DictStringProperties)
-									{
-										<small class="text-mounted">
-											@item.Value
-										</small>
-									}
-								</div>
-								<div class="col-xs-2">
-									<b class="text-info">Shop:</b>
-									<br />
-									@*<b class="text-mounted">@good.WebShop.Name</b>*@
-								</div>
-								<div class="col-xs-2">
-									<b class="text-info">Category:</b>
-									<br />
-									@*<b class="text-mounted">@good.Category.Name</b>*@
-								</div>
-								@if (@good.OldPrice == null)
-								{
-									<div class="col-xs-2">
-										<b class="text-info">Price:</b>
-										<br />
-										<b class="text-mounted">@good.Price</b>
-									</div>
-								}
-								else
-								{
-									<div class="col-xs-2">
-										<b class="text-info">Price:</b>
-										<br />
-										<b class="text-mounted"><del><small>@good.OldPrice</small></del></b>
-										<br />
-										<b class="text-danger">@good.Price</b>
-									</div>
-								}
-								<div class="col-xs-2">
-									<a class="btn btn-info" href="@good.UrlLink">To Shop</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				}
-			</div>
+                            <div class="media-body">
+                                <div class="col-xs-4">
+                                    <h4 class="text-info text-center">
+                                        <a href="@Url.Action("ConcreteGood", "Good", new {id = good.Id})">@good.Name</a>
+                                    </h4>
+                                    <p class="item-description">
+                                        @good.Description
+                                    </p>
+                                </div>
+                                <div class="col-xs-2">
+                                    <b class="text-info">@Resources.Resource.Pharmacy:</b>
+                                    <br />
+                                    <b class="text-mounted">@good.WebShop.Name</b>
+                                </div>
+                                <div class="col-xs-2">
+                                    <b class="text-info">@Resources.Resource.CategoryName:</b>
+                                    <br />
+                                    <b class="text-mounted cat-name">@good.Category.Name</b>
+                                </div>
+                                @if (@good.OldPrice == null)
+                                {
+                                    <div class="col-xs-2">
+                                        <b class="text-info">@Resources.Resource.Price:</b>
+                                        <br />
+                                        <b class="text-mounted">@good.Price</b>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="col-xs-2">
+                                        <b class="price">@Resources.Resource.Price:</b>
+                                        <br />
+                                        <b class="text-mounted"><del><small>@good.OldPrice</small></del></b>
+                                        <br />
+                                        <b class="text-danger">@good.Price</b>
+                                    </div>
+                                }
+                                <div class="col-xs-2">
+                                    <a class="btn btn-info" href="@good.UrlLink">@Resources.Resource.GoToShop</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
 
 
 		</div>

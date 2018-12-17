@@ -137,7 +137,7 @@ namespace DAL.Elastic
             var searchResults = client.Search<GoodDTO>(s => s.From(0)
                 .Size(size)
                 .Query(q =>
-                    q.MatchPhrasePrefix(m => m.Field(p => p.Name).Query(sValue))));
+                    q.Match(m => m.Field(p => p.Name).Query(sValue))));
             return searchResults.Hits.Select(x => x.Source).ToList();
 
         } 
@@ -149,7 +149,7 @@ namespace DAL.Elastic
             var searchResults = client.Search<GoodDTO>(s => s.From(0)
                 .Size(size)
                 .Query(q =>
-                    q.MatchPhrase(m => m.Field(p => p.Name).Query(sValue))));
+                    q.Match(m => m.Field(p => p.Name).Query(sValue))));
             return searchResults.Hits.Select(x => x.Source).ToList();
         }
 

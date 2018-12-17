@@ -56,7 +56,7 @@ namespace BAL.Manager
             return elasticUOW.Repository.GetByPrefix(prefix, size);
         }
 
-        public IList<GoodDTO> GetExact(string value, int size = 500)
+        public IList<GoodDTO> GetExact(string value, int size = 1)
         {
             return elasticUOW.Repository.GetExact(value, size);
         }

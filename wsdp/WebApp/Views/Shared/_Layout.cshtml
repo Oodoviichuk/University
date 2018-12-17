@@ -1,13 +1,54 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>@ViewBag.Title - WSDP Application</title>
-	@Styles.Render("~/Content/css")
-	@Scripts.Render("~/bundles/modernizr")
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - WSDP Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" type="text/css" href="~/Content/sidebar-style.css">
-    <link rel="stylesheet" href="~/Content/themes/base/all.css" type="text/css"/>
+    <link rel="stylesheet" href="~/Content/themes/base/all.css" type="text/css" />
+    <style>
+        .navbar-default {
+            background: #02578e !important;
+        }
+
+        footer {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 1000;
+            height: 75px;
+            background: white;
+        }
+
+        footer hr {
+            margin-top: 0
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover,
+        footer a:focus,
+        footer a:active,
+        footer a:visited {
+            color: #02578e;
+        }
+
+        .dataTables_paginate .paginate_button > a {
+            background: #3498db;
+        }
+
+        .dataTables_paginate .paginate_button a:hover,
+        .dataTables_paginate .active > a,
+        .dataTables_paginate .active > a:hover {
+            background: #02578e;
+        }
+
+    </style>
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">

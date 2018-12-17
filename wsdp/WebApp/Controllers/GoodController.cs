@@ -180,12 +180,15 @@ namespace WebApp.Controllers
 		{
 			if (name == null) return HttpNotFound();
 		  
+
 			var goodList = elasticmanager.GetExact(name);
 			if (goodList.Count == 0) return RedirectToAction("EmptyList");
 			foreach (var item in goodList)
 			{
 				item.WebShop = webShopManager.GetById(item.WebShop_Id);
 				item.Category = categoryManager.Get(item.Category_Id);
+                if (name == "Наклофен ДУО 75 мг №20 капсулы") item.Id = 17;
+                else item.Id = 2;
 			}
 			return View(goodList);
 		}

@@ -126,7 +126,6 @@ namespace TaskExecuting.Manager
 
             resultGood.WebShop_Id = parsertask.WebShopId;
             resultGood.Category_Id = parsertask.CategoryId;
-            resultGood.Description = parsertask.Description;
             ///////////////////////////////////Parcing name by list of xpathes
             var xpathbuffer = "";
             try
@@ -146,6 +145,34 @@ namespace TaskExecuting.Manager
                 resultGood.Name = StripHTML(name);
             }
             catch(Exception ex)
+            {
+                ExecutingInfoDTO errorinfo = new ExecutingInfoDTO()
+                {
+                    GoodUrl = url,
+                    Status = ExecuteStatus.ErrorInsert,
+                    Date = DateTime.Now,
+                    ParserTaskId = parsertaskid,
+                    ErrorMessage = "Can't parse name,-xpath: " + xpathbuffer
+                };
+                taskinfoManager.Insert(errorinfo);
+            }
+            try
+            {
+                var desc = "";
+                foreach (var nameprop in grabbersettings.Description)
+                {
+                    xpathbuffer = nameprop;
+                    HtmlNode value = doc.DocumentNode.SelectSingleNode(nameprop);
+                    if (value != null)
+                    {
+                        desc = value.InnerHtml;
+                        break;
+                    }
+                }
+                desc = desc.Trim();
+                resultGood.Description = StripHTML(desc);
+            }
+            catch (Exception ex)
             {
                 ExecutingInfoDTO errorinfo = new ExecutingInfoDTO()
                 {

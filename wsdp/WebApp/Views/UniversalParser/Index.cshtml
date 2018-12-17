@@ -56,13 +56,13 @@
 				<span class="label label-default">@parsertask.Priority.ToString()</span>
 				<br />
 				@if (parsertask.IteratorSettings != null) {
-					<span class="label label-success">It.Filled</span>
+					<span class="label label-info">It.Filled</span>
 				} else {
 					<span class="label label-danger">It.Not Filled</span>
 				}
 				<br />
 				@if (parsertask.GrabberSettings != null) {
-					<span class="label label-success">Gr.Filled</span>
+					<span class="label label-info">Gr.Filled</span>
 				} else {
 					<span class="label label-danger">Gr.Not Filled</span>
 				}
@@ -70,12 +70,12 @@
 			<div class="col-md-2 col-xs-3">
                 <b>@Resources.Resource.Category:</b>
 				<br />
-				<b class="text-success">@parsertask.Category.Name  </b>
+				<b class="text-info">@parsertask.Category.Name  </b>
 			</div>
 			<div class="col-md-2 col-xs-3">
                 <b>@Resources.Resource.Pharmacy:</b>
 				<br />
-				<b class="text-success">@parsertask.WebShop.Name</b>
+				<b class="text-info">@parsertask.WebShop.Name</b>
 			</div>
 			<div class="col-md-2 col-xs-4">
                 <b>@Resources.Resource.Date:</b>
